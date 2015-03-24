@@ -30,7 +30,7 @@
       return {
         restrict: 'A',
         require: '?ngModel',
-        terminal: true,
+        terminal: false,
         link: function(scope, element, attr, ngModel) {
           var chosen, defaultText, disableWithMessage, empty, initOrUpdate, match, options, origRender, removeEmptyMessage, startLoading, stopLoading, valuesExpr, viewWatch;
           element.addClass('localytics-chosen');
